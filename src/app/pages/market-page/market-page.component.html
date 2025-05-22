@@ -1,0 +1,15 @@
+<div class="container my-4">
+  <div class="row g-4">
+    <div class="col-6 col-md-4 col-lg-3" *ngFor="let item of produtos">
+      <div class="card bg-dark text-white h-100 border-secondary">
+        <img src="{{item.imagem}}" class="card-img-top">
+        <div class="card-body p-2">
+          <h6 class="badge bg-warning text-dark mb-1">{{item.estado}}</h6>
+          <h5 class="card-title mb-1">{{item.nome}}</h5>
+          <p class="mb-1">{{item.preco}}<small class="text-muted">({{item.precoDolar}})</small></p>
+          <small class="text-muted">{{item.quantidade}}</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
